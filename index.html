@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Text to Speech</title>
+  </head>
+  <body>
+    <h1>Speech Text Reader</h1>
+    <button class="toggle-btn" id="toggle-btn">Toggle Text Box</button>
+    <div class="img-container" id="img-container">
+      <div class="img">
+        <img src="./img/angry.jpg" />
+        <h2 class="img-caption">I'm Angry</h2>
+      </div>
+      <div class="img">
+        <img src="./img/drink.jpg" />
+        <h2 class="img-caption">I'm thirsty</h2>
+      </div>
+      <div class="img">
+        <img src="./img/food.jpg" />
+        <h2 class="img-caption">I'm Hungry</h2>
+      </div>
+      <div class="img">
+        <img src="./img/grandma.jpg" />
+        <h2 class="img-caption">I want to go to grandmas</h2>
+      </div>
+      <div class="img">
+        <img src="./img/happy.jpg" />
+        <h2 class="img-caption">I'm Happy</h2>
+      </div>
+      <div class="img">
+        <img src="./img/home.jpg" />
+        <h2 class="img-caption">I want to go home</h2>
+      </div>
+      <div class="img">
+        <img src="./img/hurt.jpg" />
+        <h2 class="img-caption">I'm Hurt</h2>
+      </div>
+      <div class="img">
+        <img src="./img/outside.jpg" />
+        <h2 class="img-caption">I want to go outside</h2>
+      </div>
+      <div class="img">
+        <img src="./img/sad.jpg" />
+        <h2 class="img-caption">I'm Sad</h2>
+      </div>
+      <div class="img">
+        <img src="./img/scared.jpg" />
+        <h2 class="img-caption">I'm Scared</h2>
+      </div>
+      <div class="img">
+        <img src="./img/school.jpg" />
+        <h2 class="img-caption">I want to go to school</h2>
+      </div>
+      <div class="img">
+        <img src="./img/tired.jpg" />
+        <h2 class="img-caption">I'm Tired</h2>
+      </div>
+    </div>
+
+    <div class="text-box" id="text-box">
+      <button class="close-btn" id="close-btn">x</button>
+      <label for="voice">Choose Voice:</label>
+      <select name="voice" id="voice"></select>
+      <textarea
+        cols="10"
+        rows="5"
+        id="text-area"
+        placeholder="Enter text to read.."
+      ></textarea>
+      <button class="text-btn" id="text-btn">Read text</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
